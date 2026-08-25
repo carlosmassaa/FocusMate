@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE5C12D4-4823-4278-96A9-54C2152C357E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.5, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.5\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministrarBuckup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarBuckup.Designer.cs">
+      <DependentUpon>AdministrarBuckup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarFamilias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarFamilias.Designer.cs">
+      <DependentUpon>AdministrarFamilias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarPermisos.Designer.cs">
+      <DependentUpon>AdministrarPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaLaboralJsonSerializer.cs" />
+    <Compile Include="AgendaLaboralPdfExporter.cs" />
+    <Compile Include="AgendaLaboralSerializada.cs" />
+    <Compile Include="AgregarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarIdioma.Designer.cs">
+      <DependentUpon>AgregarIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarIdioma.Designer.cs">
+      <DependentUpon>CambiarIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarIdioma.Designer.cs">
+      <DependentUpon>CargarIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurarBloquesTiempo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurarBloquesTiempo.Designer.cs">
+      <DependentUpon>ConfigurarBloquesTiempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurarJornadaLaboral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurarJornadaLaboral.Designer.cs">
+      <DependentUpon>ConfigurarJornadaLaboral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearPermiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearPermiso.Designer.cs">
+      <DependentUpon>CrearPermiso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarFamiliaPermiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarFamiliaPermiso.Designer.cs">
+      <DependentUpon>EditarFamiliaPermiso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBitacoraEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBitacoraEventos.Designer.cs">
+      <DependentUpon>FrmBitacoraEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIntegridadDv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIntegridadDv.Designer.cs">
+      <DependentUpon>FrmIntegridadDv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermisos.Designer.cs">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarUsuario.Designer.cs">
+      <DependentUpon>FrmRegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarPlanificacion.Designer.cs">
+      <DependentUpon>GenerarPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarPlanificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarPlanificaciones.Designer.cs">
+      <DependentUpon>GestionarPlanificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarTiempoDisponible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarTiempoDisponible.Designer.cs">
+      <DependentUpon>GestionarTiempoDisponible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarUsuario.Designer.cs">
+      <DependentUpon>GestionarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialListadoTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialListadoTarea.Designer.cs">
+      <DependentUpon>HistorialListadoTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoTareas.Designer.cs">
+      <DependentUpon>ListadoTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMidForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMidForm.Designer.cs">
+      <DependentUpon>MainMidForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarTarea.Designer.cs">
+      <DependentUpon>RegistrarTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOP10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOP10.Designer.cs">
+      <DependentUpon>TOP10.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdministrarBuckup.resx">
+      <DependentUpon>AdministrarBuckup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarFamilias.resx">
+      <DependentUpon>AdministrarFamilias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarPermisos.resx">
+      <DependentUpon>AdministrarPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarIdioma.resx">
+      <DependentUpon>AgregarIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarIdioma.resx">
+      <DependentUpon>CambiarIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarIdioma.resx">
+      <DependentUpon>CargarIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigurarBloquesTiempo.resx">
+      <DependentUpon>ConfigurarBloquesTiempo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigurarJornadaLaboral.resx">
+      <DependentUpon>ConfigurarJornadaLaboral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearPermiso.resx">
+      <DependentUpon>CrearPermiso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarFamiliaPermiso.resx">
+      <DependentUpon>EditarFamiliaPermiso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBitacoraEventos.resx">
+      <DependentUpon>FrmBitacoraEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPermisos.resx">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarUsuario.resx">
+      <DependentUpon>FrmRegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarPlanificacion.resx">
+      <DependentUpon>GenerarPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarPlanificaciones.resx">
+      <DependentUpon>GestionarPlanificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarTiempoDisponible.resx">
+      <DependentUpon>GestionarTiempoDisponible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarUsuario.resx">
+      <DependentUpon>GestionarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialListadoTarea.resx">
+      <DependentUpon>HistorialListadoTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoTareas.resx">
+      <DependentUpon>ListadoTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMidForm.resx">
+      <DependentUpon>MainMidForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistrarTarea.resx">
+      <DependentUpon>RegistrarTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOP10.resx">
+      <DependentUpon>TOP10.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="config.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{6f595a66-70d1-492b-9a3a-04ceaf35a4b2}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{7c17163b-ae27-44dd-9a3b-59860ddcde70}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicioss\Servicioss.csproj">
+      <Project>{91f37931-b5e1-4227-b712-74c8bd2ad980}</Project>
+      <Name>Servicioss</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

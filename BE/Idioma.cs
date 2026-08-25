@@ -1,0 +1,11 @@
+using System;
+
+namespace BE
+{
+    public class Idioma
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string CodigoISO { get; set; } 
+    }
+}
