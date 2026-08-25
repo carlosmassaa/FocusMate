@@ -133,7 +133,7 @@ El sistema opera exclusivamente mediante Stored Procedures parametrizados en Mic
 La documentación técnica y funcional completa del Trabajo de Diploma está disponible como documento único:
 
 - [Documento de Trabajo de Diploma (PDF)](docs/FocusMate_Documentacion_Diploma.pdf)
-- [Documento de Trabajo de Diploma (Google Docs)](https://docs.google.com/document/d/19Q4g-tJWNs22EcEG1V9CzjB2Ar3s8G4SOjHLvr_3ECI/edit?usp=sharing)
+- [Documento de Trabajo de Diploma (Google Docs)](https://docs.google.com/document/d/18GcswtrGCYmu6kLq2ZgmoFpKvgrvWNF1RiiG6CG-ads/edit?usp=sharing)
 
 ## Autor
 
